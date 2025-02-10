@@ -1,1 +1,246 @@
-Hello World
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>The Cloud Engineers</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Avion&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Avion', sans-serif;
+    }
+
+    .btn {
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 15px 25px;
+    }
+
+    .btn-primary {
+      color: #fff !important;
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #ff9900;
+      --bs-btn-border-color: #ff9900;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #d38614;
+      --bs-btn-hover-border-color: #d38614;
+      --bs-btn-focus-shadow-rgb: 49, 132, 253;
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: #d38614;
+      --bs-btn-active-border-color: #d38614;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #d38614;
+      --bs-btn-disabled-border-color: #d38614;
+    }
+
+
+    header {
+      .logo-text {
+        color: #363737;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 45px;
+      }
+
+      .nav {
+        .nav-link {
+          color: #0A0B46;
+        }
+
+        .nav-link:hover {
+          color: #2d2e85;
+        }
+      }
+    }
+
+    .main-jumbo-container {
+      background-image: url('hero_bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+
+      h1 {
+        font-size: 60px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        margin-top: 14px;
+      }
+
+      .btn {
+        font-size: 20px;
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    #aboutme {
+      background-image: url('profile_bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .book-container,
+    .aboutme-container {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+
+      h1 {
+        color: #0A0B46;
+        font-size: 48px;
+      }
+
+      p {
+        color: #8E8E98;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      a {
+        color: #6769FF;
+      }
+
+      a:hover {
+        color: #2d2e85;
+      }
+    }
+
+    .social-btn {
+      padding: 10px 12px;
+    }
+
+    footer {
+      background-color: #060636;
+      color: #F1F1F1;
+      font-size: 13px;
+      font-weight: 200;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <main>
+    <div>
+      <div class="container pt-4 pb-3">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+          <div class="col-md-6">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <img src="logo.png" class="rounded" alt="Logo" height="45">
+              <span class="ps-2 logo-text">The Cloud Engineers</span>
+            </a>
+          </div>
+
+          <ul class="nav">
+            <li><a href="https://thecloudengineers.com/newsletter" target="_blank" class="nav-link px-4">Newsletter</a>
+            </li>
+            <li><a href="#edabook" class="nav-link px-4">Book</a></li>
+            <li><a href="#aboutme" class="nav-link px-4">About Me</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="main-jumbo-container">
+        <div class="container text-center">
+          <h1 class="fw-bold">Level Up Your Cloud Engineering Skills.</h1>
+          <p>Subscribe to our free weekly newsletter to level up your Cloud engineering knowledge.<br />
+            Perfect for Software Engineers, Architects, DevOps engineers, and other tech enthusiasts looking to advance
+            their careers<br /> while mastering the latest Coud technologies.
+          </p>
+          <div class="mt-5">
+            <a href="https://thecloudengineers.com/newsletter" class="btn btn-primary btn-lg" role="button"
+              target="_blank">Check out our Free Newsletter</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="edabook" class="container book-container">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <a href="https://a.co/d/0ESOp5f" target="_blank"><img src="book.png" class="img-fluid"></a>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="fw-bold text-color">Get hands-on experience!</h1>
+            <div class="lead my-3">
+              <p>In the book, Mastering Event-Driven Microservices in AWS, author Lefteris Karageorgiou takes you on a
+                comprehensive journey through the world of
+                Event-Driven Architectures and Microservices.</p>
+              <p>This practical guide equips you with the knowledge and skills to design, build, and operate resilient,
+                scalable, and fault-tolerant systems using AWS Serverless services.</p>
+              <p>
+                The book ranked as Amazon's #1 New Release in <span class="fst-italic">Cloud Computing</span> and <span
+                  class="fst-italic">Distributed Systems & Computing</span>.
+              </p>
+              <div class="mt-2">
+                <a href="https://a.co/d/0ESOp5f" class="btn btn-primary btn-md" role="button" target="_blank">Order the
+                  Book on Amazon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="aboutme">
+        <div class="container aboutme-container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="fw-bold">About Me</h1>
+              <div class="lead my-3">
+                <p>I'm Lefteris, a Solutions Architect at Amazon Web Services and the author of the book <a
+                    href="https://a.co/d/0ESOp5f" target="_blank">Mastering Event-Driven Microservices in AWS</a>. I
+                  have over 15 years of experience in Software Engineering and I specialize in Cloud, Serverless
+                  computing, Microservices, Event-Driven Architectures, and Java.</p>
+                <p>I’m passionate about sharing my knowledge and expertise through various channels. I frequently speak
+                  at technical conferences (AWS re:Invent, AWS Summits, Devoxx), discussing topics like Serverless,
+                  Event-Driven Microservices, and Java. I’ve also contributed as a Technical Author for Java Code
+                  Geeks, one of the most popular blogs for Java Programmers.</p>
+                <p>Throughout my career, I’ve successfully led the migration of large monolithic systems to event-driven
+                  microservices architectures. In 2019, I Co-Founded a startup where I built the entire platform with
+                  Serverless on AWS and the MVP in less than 3 months with zero development cost. I’ve also trained over
+                  200 individuals on the AWS cloud platform as an AWS Tech Instructor.</p>
+                <a href="https://www.linkedin.com/in/lefkarag" target="_blank" class="btn btn-primary social-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                    </path>
+                  </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="lefkarag.JPEG" class="rounded img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="text-center py-4">
+        &copy; 2025 The Cloud Engineers. All rights reserved.
+      </footer>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
